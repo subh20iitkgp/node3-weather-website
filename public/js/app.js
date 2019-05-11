@@ -1,4 +1,4 @@
-console.log('loaded')
+console.log('loading complete')
 
 const fetch1 = (location, callback) => { 
     fetch("http://localhost:3000/weather?address=" + location).then((response)=>{
