@@ -1,7 +1,7 @@
 console.log('loading complete')
 
 const fetch1 = (location, callback) => { 
-    fetch("http://localhost:3000/weather?address=" + location).then((response)=>{
+    fetch("/weather?address=" + location).then((response)=>{
     response.json().then((data) =>{
         if (data.error){
             callback(data.error, undefined)
